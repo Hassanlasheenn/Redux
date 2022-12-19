@@ -14,7 +14,12 @@ const CartItem = ({ id, img, title, price, amount }) => {
         <div>
             <h4 className='cart-item--title'>{title}</h4>
             <h4 className="cart-item--price">${price}</h4>
-            <button className='cart-item--remove'>remove</button>
+            <button 
+                className='cart-item--remove'
+                onClick={()=> dispatch(remove(id))}
+            >
+                remove
+            </button>
         </div>
         <div>
             <button 
