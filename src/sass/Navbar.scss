@@ -1,0 +1,49 @@
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 65.5%;
+    position: relative;
+    background-color: red;
+
+    & h3{
+       font-size: 2rem; 
+       font-weight: 500;
+       color: #4f0ccd;
+       position: absolute;
+       top: 0;
+       left: 5%;
+    }
+
+    &--container {
+        position: absolute; 
+        display: flex;
+        justify-content: center;
+        top: 1.3rem;
+        left: 90%;
+        padding: 1rem;
+
+        &__amount-cont {
+            position: absolute;
+            top: -.1rem;
+            right: .8rem;
+            width: 1.2rem;
+            height: 1.2rem;
+            border-radius: 50%;
+            background-color: #fff;
+            border: 1px solid #4f0ccd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &--text {
+                font-size: .8rem;
+            }
+        }
+    }
+}
+
+nav svg {
+    width: 1.5rem;
+}

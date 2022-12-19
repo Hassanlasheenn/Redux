@@ -1,0 +1,40 @@
+.cart-item {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto .5fr 1fr auto;
+    grid-column-gap: 1.5rem;
+    margin: 1rem 0;
+    
+    &--images {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    &--title {
+        text-transform: capitalize;
+        font-weight: 500;
+        margin-bottom: .5rem;
+    }
+
+    &--price {
+        font-weight: 300;
+    }
+
+    &--remove {
+        border: 0;
+        background-color: #fff;
+        text-decoration: underline;
+        text-transform: capitalize;
+        font-size: .7rem;
+        transform: translateY(-1.3rem);
+        cursor: pointer;
+    }
+
+    &--amount__btn {
+        width: 2rem;
+        height: 1.3rem;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+}
